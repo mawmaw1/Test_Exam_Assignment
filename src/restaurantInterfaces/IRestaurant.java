@@ -9,13 +9,13 @@ import java.util.Map;
 
 public interface IRestaurant {
 
-    public List<Order> readFile(String filename) throws IOException;
-    public List<Order> getWaitingTimeSorted(List<Order> orders);
-    public List<Order> addOrderToList(List<Order> orders, Order order);
-    public List<Order> removeOrderFromList(List<Order> orders, Order order);
-    public Order getLongestWaitingTime(List<Order> orders);
-    public Order getLowestWaitingTime(List<Order> orders);
-    public Map<String,Integer> countDistinctOrders(List<Order> orders);
+   // public List<Order> readFile(String filename) throws IOException;
+    public List<Order> getWaitingTimeSorted();
+    public List<Order> addOrderToList(Order order);
+    public List<Order> removeOrderFromList(Order order);
+    public Order getLongestWaitingTime();
+    public Order getLowestWaitingTime();
+    public Map<String,Integer> countDistinctOrders();
 
 
 
